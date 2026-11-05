@@ -10,7 +10,7 @@
             margin: 0;
         }
         
-        /* 1. 影片區塊 */
+     
         .scroll-video-container {
             height: 500vh;
             position: relative;
@@ -47,8 +47,7 @@
             pointer-events: none; 
             z-index: 5;
         }
-      
-        /* 右上角圖片 (浮在影片上) */
+  
         #ROW {
             position: absolute;
             top: 170px;         
@@ -58,7 +57,7 @@
             z-index: 10;       
         }
 
-        /* 2. 影片下方圖片區塊 */
+     
         .after-video-section {
             display: flex;             
             justify-content: center;   
@@ -68,7 +67,7 @@
             background-color: rgb(0, 0, 0);
         }
 
-        /* 圖 2 (CLICK.png) 樣式 */
+    
         #CLICK {
             position: relative;
             right: 20px; 
@@ -79,13 +78,11 @@
             height: auto;
         }
 
-        /* 圖 1 的外層定位容器 */
         .img1-container {
-            position: relative;        /* 設為定位基準點 */
+            position: relative;       
             display: inline-block;
         }
 
-        /* 圖 1 (screem) 樣式 */
         #screem {
             width: 37vw;          
             max-width: 600px;    
@@ -93,24 +90,24 @@
             display: block;      
         }
 
-        /* 【共有樣式】所有按鈕的基礎設定 */
+     
         .shelf-btn {
             position: absolute; 
             top: 50.35%; 
             transform: translate(-50%, -50%); 
-            width: 14.5%;             /* 改用相對於圖 1 的百分比寬度，隨圖 1 完美放大縮小 */
+            width: 14.5%;           
             height: auto;
             cursor: pointer;          
             z-index: 10;              
             transition: transform 0.2s ease;
-            /* 注意：這裡拿掉了 min-width 和 max-width，讓按鈕完全不受限制自由縮放 */
+          
         }
 
         .shelf-btn:hover {
             transform: translate(-50%, -50%) scale(1.1); 
         }
 
-        /* 【個別定位】各按鈕的水平位置 (X 軸) */
+  
         #bottom  { left: 13.8%; }
         #bottom1 { left: 28.3%; }
         #bottom2 { left: 42.9%; }
@@ -121,7 +118,7 @@
 </head>
 <body>
 
-    <!-- 1. 影片區塊 -->
+   
     <div class="scroll-video-container" id="videoContainer">
         <div class="sticky-wrapper">
             <video id="scrollVideo" 
@@ -136,12 +133,12 @@
         </div>
     </div>
 
-    <!-- 2. 影片下方圖片區塊 -->
+    
     <div class="after-video-section">
-        <!-- 圖 2 -->
+       
         <img id="CLICK" class="img2" src="CLICK.png" alt="圖片2">
         
-        <!-- 圖 1 容器（包住圖 1 與 6 個按鈕） -->
+        
         <div class="img1-container">
             <img id="screem" class="img1" src="螢幕擷取畫面 2026-10-22 185401.png" alt="書架">
             
