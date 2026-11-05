@@ -12,13 +12,13 @@
             align-items: center;
         }
 
-        /* 1. 外層定位容器 */
+       
         .background-container {
             position: relative;
             display: inline-block;
         }
 
-        /* 2. 背景圖片 */
+        
         #back {
             width: 70vw;            
             max-width: 900px;       
@@ -26,7 +26,7 @@
             display: block;         
         }
 
-        /* 3. 漫畫格 */
+       
         #front {
             position: absolute; 
             width: 27.7vw;            
@@ -38,12 +38,12 @@
             left: 60%;   
         }
 
-        /* 4. 隱藏原本的 checkbox */
+       
         #toggle-box {
             display: none;
         }
 
-        /* 5. ME 按鈕（Label） */
+     
         .ME-label {
             position: absolute; 
             width: 22vw;            
@@ -68,7 +68,7 @@
             transform: translate(-50%, -50%) scale(1.1); 
         }
 
-        /* 6. 箭頭按鈕樣式 */
+       
         .shelf-btn {
             position: absolute; 
             top: 16%; 
@@ -86,7 +86,6 @@
             transform: translate(-50%, -50%) scale(1.1); 
         }
 
-        /* 7. 白底方塊 */
         .white-box {
             display: none; 
             position: absolute;
@@ -99,32 +98,32 @@
             background-color: #ffffff;  
             color: #333333;             
             padding: 2.5vw;             
-            padding-bottom: 4vw;        /* 預留底部空間，避免被右下角箭頭遮擋 */
+            padding-bottom: 4vw;       
             z-index: 20;                
             box-sizing: border-box;
             font-family: "Microsoft JhengHei", sans-serif;
             overflow-y: auto;           
         }
 
-        /* 【新新增】圖片與 Instagram 按鈕並排的容器 */
+      
         .profile-header {
             display: flex;
-            align-items: center;       /* 垂直居中對齊 */
-            gap: 1.2vw;                /* 圖片與按鈕之間的間距 */
+            align-items: center;     
+            gap: 1.2vw;               
             margin-bottom: 1.5vw;
         }
 
         .profile-header img {
-            width: 45%;               /* 圖片寬度 */
+            width: 45%;               
             height: auto;
             display: block;
         }
 
         .profile-header {
             display: flex;
-            align-items: center;       /* 垂直居中對齊 */
-            gap: 2vw;                /* 圖片與按鈕之間的間距 */
-            margin-top: 1.5vw;         /* 【調整這裡】讓整組圖片和按鈕往下移動一點 */
+            align-items: center;       
+            gap: 2vw;             
+            margin-top: 1.5vw;        
             margin-bottom: 1w;
         }
 
@@ -153,8 +152,7 @@
             line-height: 1.6;
         }
 
-        /* 白方塊右下角的返回箭頭樣式 */
-        .back-btn-label {
+            .back-btn-label {
             position: absolute;
             bottom: 1.5vw;       
             right: 1.5vw;        
@@ -177,7 +175,6 @@
             transform: scale(1.15);
         }
 
-        /* 8. 點擊後顯示白底方塊 */
         #toggle-box:checked ~ .white-box {
             display: block;
         }
@@ -188,26 +185,26 @@
     <div class="background-container">
         <img id="back" src="背景.png" alt="背景圖片">
         
-        <!-- 箭頭按鈕 -->
-        <a href="Untitled-1.html#screem">
+   
+        <a href="index.html#screem">
             <img class="shelf-btn" src="箭頭.png" alt="按鈕">
         </a>
 
-        <!-- 隱藏的 checkbox -->
+       
         <input type="checkbox" id="toggle-box">
 
-        <!-- ME 按鈕 -->
+      
         <label for="toggle-box" class="ME-label">
             <img src="ME.png" alt="ME按鈕">
         </label>
 
-        <!-- 漫畫格 -->
+      
         <img id="front" src="漫畫格.png" alt="漫畫格">
 
-        <!-- 白底方塊 -->
+        
         <div class="white-box">
             
-            <!-- 使用 Flexbox 容器包覆圖片與 Instagram 按鈕，實現左右並排 -->
+         
             <div class="profile-header">
                 <img src="我.png" alt="我的圖片">
                 <a href="https://www.instagram.com/luystilldrawing?obrf=ajNzbjBrNnhjenVv" target="_blank" title="luystilldrawing">
@@ -219,7 +216,7 @@
             <p>現讀實踐大學媒體傳達設計學系動畫組，熱衷於3D創作跟動畫特效處理。</p>
             <p>平時最大的愛好就是觀察，觀察身邊的人事物，將所見所聞轉變成自己的經驗跟故事。正因為觀察的習慣，較容易發現現今社會破碎的一面，想透過創作讓更多人看見跟理解這些不完美。</p>
                     
-            <!-- 右下角返回按鈕 -->
+          
             <label for="toggle-box" class="back-btn-label">
                 <img src="箭頭(回).png" alt="返回按鈕">
             </label>
